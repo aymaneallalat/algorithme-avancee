@@ -1,70 +1,119 @@
-Comte rendu – TP1 à TP4
-  TP1 : Structures
-Objectifs : apprendre à définir et manipuler des structures en C pour représenter des objets concrets (points, heures).
+TP1 : Structures
+Exercice 1 : Structure Point
+Objectif : définir une structure pour représenter un point (x,y).
 
-Travaux réalisés :
+Travail réalisé : saisie, affichage, calcul de distance à l’origine, tri d’un tableau de points.
 
-Définition d’une structure Point avec coordonnées entières.
-
-Fonctions de saisie, affichage, calcul de distance à l’origine et tri d’un tableau de points.
-
-Définition d’une structure Heure et fonctions de conversion (heures ↔ secondes), addition et différence.
-
-Résultats : maîtrise des structures, des fonctions associées et des tableaux statiques/dynamiques.
+Résultat : maîtrise des structures simples et des fonctions associées.
 
 Conclusion : les structures permettent de regrouper des données liées et de les manipuler efficacement.
 
+Exercice 2 : Structure Heure
+Objectif : représenter une heure au format hh:mm:ss.
 
-   TP2 : Complexité et récursivité
-Objectifs : analyser la complexité des algorithmes et comparer les approches itératives et récursives.
+Travail réalisé : conversion heure ↔ secondes, addition et différence de deux heures.
 
-Travaux réalisés :
+Résultat : compréhension des conversions et opérations sur des données temporelles.
 
-Recherche de la première occurrence du minimum dans un tableau (O(n)).
+Conclusion : les structures facilitent la gestion d’informations complexes comme le temps.
 
-Calcul du MiniMax d’une matrice (O(n·m)).
+ TP2 : Complexité et récursivité
+Exercice 1 : Première occurrence du minimum
+Objectif : trouver l’indice du premier minimum dans un tableau.
 
-Fonctions de puissance : version naïve (O(n)) et exponentiation rapide (O(log n)).
+Résultat : algorithme linéaire O(n).
 
-Fonction somme des puissances (O(n²)).
+Conclusion : parcours simple mais efficace.
 
-Étude des fonctions rec1 et rec2 : toutes deux calculent 2**n
-, mais rec1 est linéaire et rec2 exponentielle.
+Exercice 2 : MiniMax d’une matrice
+Objectif : calculer le minimum des maxima de chaque ligne.
 
+Résultat : complexité O(n·m).
 
-   TP3 : Listes, piles et files
-Objectifs : manipuler les structures dynamiques (listes chaînées, piles, files).
+Conclusion : importance de bien analyser les boucles imbriquées.
 
-Travaux réalisés :
+Exercice 3 : Puissance et somme
+Objectif : calculer a^n en récursif et en exponentiation rapide.
 
-Création d’une liste chaînée, insertion en tête et en fin.
+Résultat : version naïve O(n), version rapide O(log n), somme des puissances O(n²).
 
-Recherche d’une valeur (O(n)), suppression du minimum (O(n)), fusion alternée de deux listes (O(m+n)), destruction d’une liste.
+Conclusion : optimisation par exponentiation rapide réduit fortement la complexité.
 
-Définition et manipulation de piles (push/pop en O(1)), procédure PairImpair pour séparer pairs et impairs.
+Exercice 4 : Fonctions rec1 et rec2
+Objectif : analyser deux fonctions récursives.
 
-Définition et manipulation de files, utilisation combinée pile+file pour tester si un message est un palindrome.
+Résultat : rec1 calcule 2^n en O(n), rec2 calcule aussi 2^n mais en O(2^n).
 
-Résultats : compréhension des opérations fondamentales sur les structures linéaires.
+Conclusion : la récursivité mal conçue peut exploser en complexité.
 
-Conclusion : les listes offrent flexibilité, les piles et files imposent des règles d’accès (LIFO/FIFO) utiles pour résoudre des problèmes spécifiques.
-Résultats : mise en évidence des différences de performance entre algorithmes naïfs et optimisés.
+ TP3 : Listes, piles et files
+Exercice 1 : Création d’une liste
+Objectif : construire une liste chaînée.
 
-Conclusion : la récursivité doit être utilisée avec prudence, car elle peut être très coûteuse si mal conçue.
+Résultat : insertion en tête O(1).
 
-   TP4 : Arbres binaires de recherche (ABR)
-Objectifs : manipuler les arbres binaires de recherche et comprendre leur rôle dans le tri et la recherche.
+Conclusion : base des structures dynamiques.
 
-Travaux réalisés :
+Exercice 2 : Recherche de valeur
+Objectif : rechercher une valeur dans une liste.
 
-Fonctions d’insertion, recherche, comptage d’occurrences, parcours infixe.
+Résultat : complexité O(n).
 
-Conversion liste ↔ ABR et tri de liste via ABR.
+Conclusion : parcours linéaire nécessaire.
 
-Vérification qu’un arbre est bien un ABR (O(n)).
+Exercice 3 : Suppression du minimum
+Objectif : supprimer le nœud contenant la plus petite valeur.
 
-Recherche du plus petit élément (O(h)).
+Résultat : complexité O(n).
 
-Résultats : mise en pratique des propriétés des ABR pour organiser et trier efficacement les données.
+Conclusion : gestion des cas particuliers (min au début).
 
-Conclusion : les ABR sont puissants pour la recherche et le tri, mais leur efficacité dépend de leur équilibre (logarithmique si équilibré, linéaire si dégénéré).
+Exercice 4 : Fusion de deux listes
+Objectif : fusion alternée de deux listes.
+
+Résultat : complexité O(m+n).
+
+Conclusion : manipulation des pointeurs pour combiner deux structures.
+
+Exercice 5 : Destruction d’une liste
+Objectif : libérer la mémoire occupée par une liste.
+
+Résultat : complexité O(n).
+
+Conclusion : importance de la gestion mémoire en C.
+
+Exercice 6 : Piles
+Objectif : définir une pile et opérations push/pop.
+
+Résultat : opérations en O(1), procédure PairImpair pour séparer pairs/impairs.
+
+Conclusion : piles utiles pour organiser les données selon LIFO.
+
+Exercice 7 : Files et palindrome
+Objectif : utiliser une file pour stocker un message et une pile pour tester si c’est un palindrome.
+
+Résultat : algorithme combinant deux structures.
+
+Conclusion : files (FIFO) et piles (LIFO) se complètent pour résoudre des problèmes.
+
+ TP4 : Arbres binaires de recherche (ABR)
+Exercice 1 : Fonctions sur ABR
+Objectif : insertion, recherche, occurrences, parcours infixe, conversion liste ↔ ABR, tri.
+
+Résultat : complexité proportionnelle à la hauteur O(h).
+
+Conclusion : ABR efficaces pour recherche et tri si équilibrés.
+
+Exercice 2 : Vérifier si un arbre est un ABR
+Objectif : tester la validité d’un ABR.
+
+Résultat : parcours complet avec bornes min/max, complexité O(n).
+
+Conclusion : vérification fiable en parcourant tous les nœuds.
+
+Exercice 3 : Plus petit élément
+Objectif : trouver le minimum dans un ABR.
+
+Résultat : descente à gauche, complexité O(h).
+
+Conclusion : simple et efficace.ité dépend de leur équilibre (logarithmique si équilibré, linéaire si dégénéré).
