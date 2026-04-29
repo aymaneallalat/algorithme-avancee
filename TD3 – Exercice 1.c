@@ -1,8 +1,14 @@
-inhjbhnjdz
-jdzbfiuaif
-sknfoaw8
-knua8b
-xnfuahe9f
-slnf9shrni
-dgn9urshtoi
-mgonrst
+struct Element {
+    int val;
+    struct Element *suivant;
+};
+typedef struct Element LISTE;
+
+int InsererElementEnTete(LISTE **L, int valeur) {
+    LISTE *element = (LISTE*) malloc(sizeof(LISTE));
+    if (!element) return 0;
+    element->val = valeur;
+    element->suivant = *L;
+    *L = element;
+    return 1;
+}
