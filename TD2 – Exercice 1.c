@@ -1,8 +1,7 @@
-inhjbhnjdz
-jdzbfiuaif
-sknfoaw8
-knua8b
-xnfuahe9f
-slnf9shrni
-dgn9urshtoi
-mgonrst
+int minIndex(int tab[], int N) {
+    int index = 0;
+    for(int i=1; i<N; i++) {
+        if(tab[i] < tab[index]) index = i;
+    }
+    return index;
+}
