@@ -1,0 +1,70 @@
+Comte rendu – TP1 à TP4
+  TP1 : Structures
+Objectifs : apprendre à définir et manipuler des structures en C pour représenter des objets concrets (points, heures).
+
+Travaux réalisés :
+
+Définition d’une structure Point avec coordonnées entières.
+
+Fonctions de saisie, affichage, calcul de distance à l’origine et tri d’un tableau de points.
+
+Définition d’une structure Heure et fonctions de conversion (heures ↔ secondes), addition et différence.
+
+Résultats : maîtrise des structures, des fonctions associées et des tableaux statiques/dynamiques.
+
+Conclusion : les structures permettent de regrouper des données liées et de les manipuler efficacement.
+
+
+   TP2 : Complexité et récursivité
+Objectifs : analyser la complexité des algorithmes et comparer les approches itératives et récursives.
+
+Travaux réalisés :
+
+Recherche de la première occurrence du minimum dans un tableau (O(n)).
+
+Calcul du MiniMax d’une matrice (O(n·m)).
+
+Fonctions de puissance : version naïve (O(n)) et exponentiation rapide (O(log n)).
+
+Fonction somme des puissances (O(n²)).
+
+Étude des fonctions rec1 et rec2 : toutes deux calculent 2**n
+, mais rec1 est linéaire et rec2 exponentielle.
+
+
+   TP3 : Listes, piles et files
+Objectifs : manipuler les structures dynamiques (listes chaînées, piles, files).
+
+Travaux réalisés :
+
+Création d’une liste chaînée, insertion en tête et en fin.
+
+Recherche d’une valeur (O(n)), suppression du minimum (O(n)), fusion alternée de deux listes (O(m+n)), destruction d’une liste.
+
+Définition et manipulation de piles (push/pop en O(1)), procédure PairImpair pour séparer pairs et impairs.
+
+Définition et manipulation de files, utilisation combinée pile+file pour tester si un message est un palindrome.
+
+Résultats : compréhension des opérations fondamentales sur les structures linéaires.
+
+Conclusion : les listes offrent flexibilité, les piles et files imposent des règles d’accès (LIFO/FIFO) utiles pour résoudre des problèmes spécifiques.
+Résultats : mise en évidence des différences de performance entre algorithmes naïfs et optimisés.
+
+Conclusion : la récursivité doit être utilisée avec prudence, car elle peut être très coûteuse si mal conçue.
+
+   TP4 : Arbres binaires de recherche (ABR)
+Objectifs : manipuler les arbres binaires de recherche et comprendre leur rôle dans le tri et la recherche.
+
+Travaux réalisés :
+
+Fonctions d’insertion, recherche, comptage d’occurrences, parcours infixe.
+
+Conversion liste ↔ ABR et tri de liste via ABR.
+
+Vérification qu’un arbre est bien un ABR (O(n)).
+
+Recherche du plus petit élément (O(h)).
+
+Résultats : mise en pratique des propriétés des ABR pour organiser et trier efficacement les données.
+
+Conclusion : les ABR sont puissants pour la recherche et le tri, mais leur efficacité dépend de leur équilibre (logarithmique si équilibré, linéaire si dégénéré).
